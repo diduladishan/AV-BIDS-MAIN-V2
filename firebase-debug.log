@@ -1,0 +1,30 @@
+[debug] [2023-10-25T10:53:57.971Z] ----------------------------------------------------------------------
+[debug] [2023-10-25T10:53:57.973Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-10-25T10:53:57.973Z] CLI Version:   12.7.0
+[debug] [2023-10-25T10:53:57.974Z] Platform:      win32
+[debug] [2023-10-25T10:53:57.974Z] Node Version:  v20.9.0
+[debug] [2023-10-25T10:53:57.974Z] Time:          Wed Oct 25 2023 16:23:57 GMT+0530 (India Standard Time)
+[debug] [2023-10-25T10:53:57.974Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-10-25T10:53:58.021Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-10-25T10:53:58.021Z] > authorizing via signed-in user (didula@sphiriadigital.com)
+[debug] [2023-10-25T10:53:58.022Z] [iam] checking project av-bids for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-10-25T10:53:58.023Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/av-bids:testIamPermissions [none]
+[debug] [2023-10-25T10:53:58.023Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/av-bids:testIamPermissions x-goog-quota-user=projects/av-bids
+[debug] [2023-10-25T10:53:58.023Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/av-bids:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-10-25T10:53:59.597Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/av-bids:testIamPermissions 200
+[debug] [2023-10-25T10:53:59.597Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/av-bids:testIamPermissions {}
+[debug] [2023-10-25T10:53:59.597Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project av-bids:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-10-25T10:53:59.598Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/av-bids [none]
+[debug] [2023-10-25T10:54:00.262Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/av-bids 403
+[debug] [2023-10-25T10:54:00.263Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/av-bids {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-10-25T10:54:00.264Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-10-25T10:54:00.685Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\Administrator\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project av-bids. Please make sure the project exists and your account has permission to access it.
