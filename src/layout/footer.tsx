@@ -22,6 +22,8 @@ export function Footer() {
   return (
     <footer className="relative w-full p-16 bg-primary text-white">
       <div className="mx-auto w-full max-w-7xl px-8">
+        <div></div>
+
         <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 sm:grid-cols-3 lg:grid-cols-5">
           <div className="sm:col-span-3 md:col-span-1">
             <img src={LOGO} alt="" className="mx-auto" />
@@ -32,6 +34,7 @@ export function Footer() {
             </Link>
           </div>
           <div className="sm:hidden md:inline-block md:col-span-2 lg:col-span-1"></div>
+
           {SITEMAP.map(({ title, links }, key) => (
             <div key={key} className="w-full">
               <h4 className="mb-8 uppercase text-center md:text-left ">
@@ -46,7 +49,52 @@ export function Footer() {
               </ul>
             </div>
           ))}
+
+          {/* <div className="flex items-center gap-4">
+            <div>
+              <Link to="/event-planner">
+                <div>1_event Planner</div>
+              </Link>
+              <Link to="/av_providers">
+                <div>AV_Providers</div>
+              </Link>
+              <Link to="/3_services">
+                <div>3_services</div>
+              </Link>
+              <Link to="/4_event_categories">
+                <div>Event Categories</div>
+              </Link>
+            </div>
+
+            <div>
+              {" "}
+              <Link to="/5_01_create_event_planner">
+                <div>5_01_create_event_planner</div>
+              </Link>
+              <Link to="/8_about_us">
+                <div>8_about_us</div>
+              </Link>
+              <Link to="/6_existing_user">
+                <div>6_existing_users (sign in page)</div>
+              </Link>
+            </div>
+
+            <div>
+              <Link to="/7_contact_us">
+                <div>7_contact_us</div>
+              </Link>
+
+              <Link to="/09_events">
+                <div>09_events</div>
+              </Link>
+
+              <Link to="/10_event_details_page">
+                <div>10_event_details_page</div>
+              </Link>
+            </div>
+          </div> */}
         </div>
+
         <div className="flex w-full flex-col items-center justify-center py-4 sm:flex-row md:justify-end gap-4">
           <p>Terms of Conditions</p>
           <p>Privacy</p>

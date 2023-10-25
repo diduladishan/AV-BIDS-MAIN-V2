@@ -104,39 +104,48 @@ function index() {
         <img src={HOME_3} alt="aad" className="w-full object-contain" />
       </section>
 
-      <section>
-        <Link to="/event-planner">
-          <div>1_event Planner</div>
-        </Link>
-        <Link to="/av_providers">
-          <div>AV_Providers</div>
-        </Link>
-        <Link to="/3_services">
-          <div>3_services</div>
-        </Link>
-        <Link to="/4_event_categories">
-          <div>Event Categories</div>
-        </Link>
-        <Link to="/5_01_create_event_planner">
-          <div>5_01_create_event_planner</div>
-        </Link>
-        <Link to="/8_about_us">
-          <div>8_about_us</div>
-        </Link>
-        <Link to="/6_existing_user">
-          <div>6_existing_users (sign in page)</div>
-        </Link>
-        <Link to="/7_contact_us">
-          <div>7_contact_us</div>
-        </Link>
+      <section className="bg-[#E2E5FA] rounded-lg p-6 ">
+        <h2 className="text-[25px] text-center text-primary mb-4">Site Map</h2>
+        <div className="flex justify-center gap-16">
+          <div className="text-[16px] font-medium">
+            <Link to="/event-planner">
+              <div className="mb-2">1_event Planner</div>
+            </Link>
+            <Link to="/av_providers">
+              <div className="mb-2">AV_Providers</div>
+            </Link>
+            <Link to="/3_services">
+              <div className="mb-2">3_services</div>
+            </Link>
+            <Link to="/4_event_categories">
+              <div>Event Categories</div>
+            </Link>
+          </div>
 
-        <Link to="/09_events">
-          <div>09_events</div>
-        </Link>
+          <div className="text-[16px] font-medium">
+            <Link to="/5_01_create_event_planner">
+              <div className="mb-2">5_01_create_event_planner</div>
+            </Link>
+            <Link to="/8_about_us">
+              <div className="mb-2">8_about_us</div>
+            </Link>
+            <Link to="/6_existing_user">
+              <div>6_existing_users (sign in page)</div>
+            </Link>
+          </div>
 
-        <Link to="/10_event_details_page">
-          <div>10_event_details_page</div>
-        </Link>
+          <div className="text-[16px] font-medium">
+            <Link to="/7_contact_us">
+              <div className="mb-2">7_contact_us</div>
+            </Link>
+            <Link to="/09_events">
+              <div className="mb-2">09_events</div>
+            </Link>
+            <Link to="/10_event_details_page">
+              <div>10_event_details_page</div>
+            </Link>
+          </div>
+        </div>
       </section>
     </div>
   );
