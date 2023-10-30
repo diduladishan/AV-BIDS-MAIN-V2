@@ -24,7 +24,9 @@ function index() {
             size="sm"
             className="rounded-md w-36 py-4 mt-4 px-8 bg-primary font-poppins"
           >
-            <span className="text-white">Get Started</span>
+            <Link to="/6_existing_user">
+              <span className="text-white">Get Started</span>
+            </Link>
           </Button>
         </div>
         <img src={HOME_1} alt="aad" className="w-full object-scale-down" />
@@ -57,7 +59,9 @@ function index() {
             size="sm"
             className="rounded-md w-36 py-4 mt-4 px-8 bg-primary font-poppins"
           >
-            <span className="text-white">Get Started</span>
+            <Link to="/event-planner">
+              <span className="text-white">Learn More</span>
+            </Link>
           </Button>
         </div>
       </section>
@@ -98,7 +102,9 @@ function index() {
             size="sm"
             className="rounded-md w-36 py-4 mt-4 px-8 bg-primary font-poppins"
           >
-            <span className="text-white">Get Started</span>
+            <Link to="/av_providers">
+              <span className="text-white">Learn More</span>
+            </Link>
           </Button>
         </div>
         <img src={HOME_3} alt="aad" className="w-full object-contain" />

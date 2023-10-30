@@ -24,7 +24,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-8">
         <div></div>
 
-        <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 sm:grid-cols-3 lg:grid-cols-5">
+        {/* <div className="mx-auto grid w-full grid-cols-1 gap-8 py-12 sm:grid-cols-3 lg:grid-cols-5">
           <div className="sm:col-span-3 md:col-span-1">
             <img src={LOGO} alt="" className="mx-auto" />
             <Link to="/av_providers">
@@ -49,50 +49,82 @@ export function Footer() {
               </ul>
             </div>
           ))}
+        </div> */}
 
-          {/* <div className="flex items-center gap-4">
-            <div>
-              <Link to="/event-planner">
-                <div>1_event Planner</div>
-              </Link>
-              <Link to="/av_providers">
-                <div>AV_Providers</div>
-              </Link>
-              <Link to="/3_services">
-                <div>3_services</div>
-              </Link>
-              <Link to="/4_event_categories">
-                <div>Event Categories</div>
-              </Link>
-            </div>
+        <div className="grid sm:grid-cols-3 md:grid-cols-5 gap-8 mb-12">
+          <div className="mb-8 sm:col-span-3 md:col-span-2 sm:place-self-start ">
+            <img src={LOGO} alt="" className="mx-auto w-[220px]" />
 
-            <div>
-              {" "}
-              <Link to="/5_01_create_event_planner">
-                <div>5_01_create_event_planner</div>
-              </Link>
-              <Link to="/8_about_us">
-                <div>8_about_us</div>
-              </Link>
-              <Link to="/6_existing_user">
-                <div>6_existing_users (sign in page)</div>
-              </Link>
-            </div>
+            <p className="text-sm text-center mt-4 sm:mb-8 md:mb-0">
+              All Rights Reserved - 2023
+            </p>
+          </div>
 
-            <div>
-              <Link to="/7_contact_us">
-                <div>7_contact_us</div>
-              </Link>
+          <div className="mb-6 text-center">
+            <h4 className="mb-8 uppercase text-center">For Event Planners</h4>
 
-              <Link to="/09_events">
-                <div>09_events</div>
-              </Link>
+            <Link to="/event-planner">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4 ">
+                How to get started
+              </p>
+            </Link>
 
-              <Link to="/10_event_details_page">
-                <div>10_event_details_page</div>
-              </Link>
-            </div>
-          </div> */}
+            <Link to="/event-planner">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4">
+                FAQs
+              </p>
+            </Link>
+
+            <Link to="/4_event_categories">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer">
+                Event Categories
+              </p>
+            </Link>
+          </div>
+
+          <div className="mb-6 text-center">
+            <h4 className="mb-8 uppercase text-center ">For AV Providers</h4>
+
+            <Link to="/av_providers">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4">
+                How to get started
+              </p>
+            </Link>
+
+            <Link to="/av_providers">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4">
+                FAQs
+              </p>
+            </Link>
+
+            <Link to="/4_event_categories">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer">
+                Event Categories
+              </p>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <h4 className="mb-8 uppercase text-center ">AV Bids</h4>
+
+            <Link to="/8_about_us">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4">
+                About us
+              </p>
+            </Link>
+
+            <Link to="/7_contact_us">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer mb-4">
+                Contact us
+              </p>
+            </Link>
+
+            <Link to="/3_services">
+              <p className="hover:underline transition ease-in-out duration-300 cursor-pointer">
+                Services
+              </p>
+            </Link>
+          </div>
         </div>
 
         <div className="flex w-full flex-col items-center justify-center py-4 sm:flex-row md:justify-end gap-4">
