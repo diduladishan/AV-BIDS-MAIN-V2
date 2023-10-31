@@ -212,7 +212,12 @@ export default function CheckoutForm() {
                     </Button>
                     <p className='mt-2 flex items-center justify-center gap-2 text-[14px]'>
                       Have an account?{' '}
-                      <span className='text-secondary underline'>Sign In</span>
+                      <span
+                        className='text-secondary underline cursor-pointer'
+                        onClick={() => navigate('/6_existing_user')}
+                      >
+                        Sign In
+                      </span>
                     </p>
                   </form>
                 </TabPanel>
@@ -316,7 +321,12 @@ export default function CheckoutForm() {
                     </Button>
                     <p className='mt-2 flex items-center justify-center gap-2 text-[14px]'>
                       Have an account?{' '}
-                      <span className='text-secondary underline'>Sign In</span>
+                      <span
+                        className='text-secondary underline cursor-pointer'
+                        onClick={() => navigate('/6_existing_user')}
+                      >
+                        Sign In
+                      </span>
                     </p>
                   </form>
                 </TabPanel>

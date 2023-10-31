@@ -33,8 +33,11 @@ export function Index() {
     try {
       const { data } = await api.post('/auth/login', { ...values });
 
-      if (data.token) {
-        navigate('/');
+      console.log(data.user);
+      if (data.user.userType === 'PROVIDER') {
+        navigate('/provider-dashboard');
+      } else {
+        navigate('/planner-dashboard');
       }
     } catch (error) {
       console.log(error);
@@ -132,7 +135,12 @@ export function Index() {
               <p className='text-[14px]'>
                 {' '}
                 Don’t have an Account?{' '}
-                <span className='text-[#8645FF] underline'>Sign Up</span>
+                <span
+                  className='text-[#8645FF] underline cursor-pointer'
+                  onClick={() => navigate('/5_01_create_event_planner')}
+                >
+                  Sign Up
+                </span>
               </p>
             </Typography>
           </form>
